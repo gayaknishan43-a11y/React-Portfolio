@@ -6,19 +6,22 @@ const Projects = () => {
       title: 'Personal Portfolio',
       description: 'Modern responsive portfolio website built with React',
       tech: ['React', 'tailwindcss', 'JavaScript'],
-      image: '💼'
+      image: '💼',
+      sourceCode: 'https://github.com/gayaknishan43-a11y/React-Portfolio'
     },
     {
       title: 'The Worlds of Waigers',
       description: 'Interactive gaming platform with immersive experiences',
       tech: ['Nextjs', 'Flask', 'tailwindcss'],
-      image: '🎮'
+      image: '🎮',
+      sourceCode: 'https://github.com/drohankoirala/theworldofgame_client'
     },
     {
-      title: 'Calculator',
+      title: 'Calculator App',
       description: 'Simple and elegant calculator with basic arithmetic operations',
       tech: ['HTML', 'CSS', 'JavaScript'],
-      image: '🧮'
+      image: '🧮',
+      sourceCode: 'https://github.com/Tejraj-co/Calculator---By-Html-Css-JavaScript'
     }
   ];
 
@@ -42,7 +45,7 @@ const Projects = () => {
                 </div>
                 <div className="project-links">
                   <a href="#" className="project-link">View Project</a>
-                  <a href="#" className="project-link">Source Code</a>
+                  <a href={project.sourceCode} className="project-link">Source Code</a>
                 </div>
               </div>
             </div>
